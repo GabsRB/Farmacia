@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="622.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.MenuPrincipalController">
+    <stylesheets>
+        <URL value="@/styles/menuprincipal.css" />
+    </stylesheets>
+   <children>
+      <ImageView id="PlanoFundo" fitHeight="549.0" fitWidth="691.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/PlanoFundo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView id="Logo" fitHeight="56.0" fitWidth="74.0" layoutX="207.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/farmacia%20(1).png" />
+         </image>
+      </ImageView>
+      <Text id="FarmaBemLogo" fill="#0023c4" layoutX="250.0" layoutY="106.0" stroke="#0023c4" strokeLineCap="BUTT" strokeWidth="0.0" style="-fx-alignment: center;" text="FarmaBem" wrappingWidth="206.068359375">
+         <font>
+            <Font name="Arial Black" size="33.0" />
+         </font>
+      </Text>
+      <Button id="btnFornecedoresMenu" layoutX="62.0" layoutY="196.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="34.0" fitWidth="33.0" layoutX="129.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/entregador%20(1).png" />
+         </image>
+      </ImageView>
+      <Text id="TestoMenu" layoutX="242.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha um dos botões abaixo: ">
+         <font>
+            <Font name="Arial Narrow Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button id="btnFornecedoresMenu" layoutX="62.0" layoutY="308.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="btnFornecedoresMenu" layoutX="268.0" layoutY="419.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="btnFornecedoresMenu" layoutX="268.0" layoutY="308.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="btnFornecedoresMenu" layoutX="268.0" layoutY="196.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="btnFornecedoresMenu" layoutX="467.0" layoutY="196.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="btnFornecedoresMenu" layoutX="467.0" layoutY="308.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" style="-fx-background-color: #F8F8F8; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); -fx-padding: 10 0 0 0;" text="Fornecedores" textFill="#1e1e1e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+module-info.class
+com\mycompany\PrimaryController.class
+com\mycompany\MenuPrincipalController.class
+com\mycompany\SecondaryController.class
+com\mycompany\Principal.class
