@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="1055.0" style="-fx-background-color: #E6F4F1;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.TelaClientesController">
+    <stylesheets>
+        <URL value="@/styles/telaclientes.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-10.0" prefHeight="608.0" prefWidth="181.0" style="-fx-background-color: #00B7FF;">
+         <children>
+            <ImageView fitHeight="1.0" fitWidth="134.0" layoutX="31.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Linha.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="40.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconfarmaciaBranc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="178.0" layoutX="31.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/BranFarmaBem.png" />
+               </image>
+            </ImageView>
+            <Button id="BtnInicialForn" layoutY="146.0" mnemonicParsing="false" onAction="#abrirMenuPrincipalProduct" onMousePressed="#buttonPressed" onMouseReleased="#buttonReleased" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 20 0 0;" text="Menu Principal" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnFornForn" layoutY="187.0" mnemonicParsing="false" onAction="#abrirFornecedor" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 25 0 0;" text="Fornecedores" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnProducForn" layoutY="228.0" mnemonicParsing="false" onAction="#AbrirTelaProduc" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-padding: 0 60 0 0; -fx-alignment: center-right;" text="Produtos" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnClientForn" layoutY="269.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #91D3F0; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 68 0 0;" text="Clientes" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnConsultForn" layoutY="310.0" mnemonicParsing="false" onAction="#AbrirForneceConsultProduc" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 1 0 0;" text="Consulta Produtos" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnListCompForn" layoutY="351.0" mnemonicParsing="false" onAction="#AbrirTelaComprasForn" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="Lista de Compras" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnExamForn" layoutY="392.0" mnemonicParsing="false" onAction="#AbrirTelaExameForn" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 10 0 0;" text="Exames e Testes" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnConsultExamForn" layoutY="433.0" mnemonicParsing="false" onAction="#AbrirConsultExameForn" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 10 0 0;" text="Consulta Exames" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="155.0" onMouseClicked="#AbrirMenuImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconMenu%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="196.0" onMouseClicked="#AbrirFornecedorImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconFornece%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="237.0" onMouseClicked="#AbrirProductImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconProduc%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconClient%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="319.0" onMouseClicked="#AbrirProductImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconConsultProduc%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="360.0" onMouseClicked="#AbrirListCompFornImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconListaCompra%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="401.0" onMouseClicked="#AbrirTelaExamFornImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconExame%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="442.0" onMouseClicked="#AbrirConsultExamFornImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconExameConsu%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text id="txtGereForn" fill="#080513" layoutX="206.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento de Clientes:" wrappingWidth="320.30078125">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="465.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="843.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" wrappingWidth="60.56640625">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="231.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="464.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="783.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:" wrappingWidth="110.99999999999994">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="231.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail: ">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="450.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="883.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text id="txtBairro" fill="#6e6e6e" layoutX="235.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text id="txtCidade" fill="#6e6e6e" layoutX="474.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text id="txtUF" fill="#6e6e6e" layoutX="799.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text id="txtcep" fill="#6e6e6e" layoutX="894.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField id="filedNomeCliet" layoutX="465.0" layoutY="128.0" prefHeight="30.0" prefWidth="348.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedCPFclIENT" layoutX="846.0" layoutY="128.0" prefHeight="30.0" prefWidth="181.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedTelefoneClient" layoutX="783.0" layoutY="206.0" prefHeight="30.0" prefWidth="242.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedEmailClient" layoutX="227.0" layoutY="280.0" prefHeight="30.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <RadioButton id="RdFem" layoutX="465.0" layoutY="211.0" mnemonicParsing="false" text="Feminino">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="Rdmasc" layoutX="557.0" layoutY="211.0" mnemonicParsing="false" text="Masculino">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="RdOutro" layoutX="655.0" layoutY="211.0" mnemonicParsing="false" text="Outro">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <TextField id="filedEnderecoclient" layoutX="452.0" layoutY="280.0" prefHeight="30.0" prefWidth="406.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedNumClient" layoutX="883.0" layoutY="280.0" prefHeight="30.0" prefWidth="144.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedBairroClient" layoutX="227.0" layoutY="356.0" prefHeight="30.0" prefWidth="232.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedCidadeClient" layoutX="474.0" layoutY="356.0" prefHeight="30.0" prefWidth="305.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedUFclIENT" layoutX="799.0" layoutY="356.0" prefHeight="30.0" prefWidth="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="filedCEPclIENT" layoutX="894.0" layoutY="356.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button id="btnCadastrarClient" layoutX="231.0" layoutY="452.0" onAction="#cadastrarCliente"  mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" styleClass="BtnCadastrar" text="Cadastrar" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button id="btnEditarClient" layoutX="422.0" layoutY="452.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Editar" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button id="btnExcluirClient" layoutX="564.0" layoutY="452.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Excluir" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button id="btnLimpCampClient" layoutX="830.0" layoutY="454.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Limpar Campos" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField id="fieldIdClient" layoutX="226.0" layoutY="128.0" prefHeight="30.0" prefWidth="181.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="#6e6e6e" layoutX="229.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Cliente:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button id="btnPesquisaClient" layoutX="698.0" layoutY="452.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Pesquisar" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <DatePicker id="filedDateNascClient" layoutX="230.0" layoutY="209.0" prefHeight="30.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>

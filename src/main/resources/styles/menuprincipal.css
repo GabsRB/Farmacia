@@ -1,0 +1,56 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+#btnFornecedoresMenu:hover {
+    -fx-background-color: #EAEEFF !important; 
+    -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+#btnProdutosMenu:hover {
+    -fx-background-color: #EAEEFF !important; 
+    -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+#btnClientesMenu:hover {
+    -fx-background-color: #EAEEFF !important; 
+    -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+#btnConsultaProducMenu:hover {
+   -fx-background-color: #EAEEFF !important; 
+    -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+#btnListaComprasMenu:hover {
+    -fx-background-color: #EAEEFF !important; 
+    -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+#btnExamesTesteMenu:hover {
+    -fx-background-color: #EAEEFF !important; 
+  -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}
+
+#btnConsultExamMenu:hover {
+    -fx-background-color: #EAEEFF !important; 
+    -fx-text-fill: #00315B; 
+    -fx-scale-x: 1.1; 
+    -fx-scale-y: 1.1; 
+}

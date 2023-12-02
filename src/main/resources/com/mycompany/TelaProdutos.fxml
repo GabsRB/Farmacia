@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="824.0" style="-fx-background-color: #E6F4F1;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.TelaProdutosController">
+    <stylesheets>
+        <URL value="@/styles/telaprodutos.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="640.0" prefWidth="181.0" style="-fx-background-color: #00B7FF;">
+         <children>
+            <ImageView fitHeight="1.0" fitWidth="134.0" layoutX="31.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Linha.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="40.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconfarmaciaBranc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="178.0" layoutX="31.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/BranFarmaBem.png" />
+               </image>
+            </ImageView>
+            <Button id="BtnInicialPorduc" layoutY="146.0" mnemonicParsing="false" onAction="#abrirMenuPrincipalProduct" onMousePressed="#buttonPressed" onMouseReleased="#buttonReleased" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 20 0 0;" text="Menu Principal" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnFornProduc" layoutY="187.0" mnemonicParsing="false" onAction="#abrirFornecedor" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 25 0 0;" text="Fornecedores" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnProducProduct" layoutY="228.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #91D3F0; -fx-border-color: #BFE0FF; -fx-padding: 0 60 0 0; -fx-alignment: center-right;" text="Produtos" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnClientProduc" layoutY="269.0" mnemonicParsing="false" onAction="#AbrirTelaClient" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 68 0 0;" text="Clientes" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnConsultProduct" layoutY="310.0" mnemonicParsing="false" onAction="#AbrirForneceConsultProduc" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 1 0 0;" text="Consulta Produtos" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnListCompProduct" layoutY="351.0" mnemonicParsing="false" onAction="#AbrirTelaComprasForn" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="Lista de Compras" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnExamProduct" layoutY="392.0" mnemonicParsing="false" onAction="#AbrirTelaExameForn" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 10 0 0;" text="Exames e Testes" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="BtnConsultExamProdcut" layoutY="433.0" mnemonicParsing="false" onAction="#AbrirConsultExameForn" prefHeight="41.0" prefWidth="181.0" style="-fx-background-color: #00B7FF; -fx-border-color: #BFE0FF; -fx-alignment: center-right; -fx-padding: 0 10 0 0;" text="Consulta Exames" textFill="#080513">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="155.0" onMouseClicked="#AbrirMenuImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconMenu%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="196.0" onMouseClicked="#AbrirFornecedorImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconFornece%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconProduc%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="278.0" onMouseClicked="#AbrirClientImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconClient%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="319.0" onMouseClicked="#AbrirFornConsuProdutImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconConsultProduc%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="360.0" onMouseClicked="#AbrirListCompFornImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconListaCompra%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="401.0" onMouseClicked="#AbrirTelaExamFornImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconExame%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="19.0" layoutY="442.0" onMouseClicked="#AbrirConsultExamFornImag" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/IconExameConsu%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text id="txtGereProduc" fill="#080513" layoutX="206.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento de Produtos:" wrappingWidth="320.30078125">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="210.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome: ">
+         <font>
+            <Font name="Palatino Linotype Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="526.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="206.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="420.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor:">
+         <font>
+            <Font name="Palatino Linotype Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6e6e6e" layoutX="568.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornecedor">
+         <font>
+            <Font name="Palatino Linotype Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField id="fieldNome" layoutX="209.0" layoutY="104.0" prefHeight="30.0" prefWidth="247.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="FieldCategoria" layoutX="526.0" layoutY="104.0" prefHeight="30.0" prefWidth="228.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="fieldQtde" layoutX="209.0" layoutY="189.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="fieldValor" layoutX="416.0" layoutY="189.0" prefHeight="30.0" prefWidth="110.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox id="CbFornecedor" layoutX="568.0" layoutY="192.0" prefHeight="30.0" prefWidth="234.0" />
+      <AnchorPane id="FundoTable" layoutX="181.0" layoutY="307.0" prefHeight="333.0" prefWidth="643.0" style="-fx-background-color: #E6F4F1; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0); -fx-border-radius: 10px; -fx-border-color: #D3D3D3; -fx-background-radius: 10px;">
+         <children>
+            <TableView id="TableForne" layoutX="94.0" layoutY="48.0" prefHeight="256.0" prefWidth="452.0" style="-fx-background-size: 20px;">
+               <columns>
+                  <TableColumn id="CollumIDProduto" prefWidth="75.0" text="ID Produto" />
+                  <TableColumn id="CollumNome" prefWidth="75.0" text="Nome" />
+                  <TableColumn id="CollumCateg" prefWidth="75.0" text="Categoria" />
+                  <TableColumn id="CollumQtde" prefWidth="75.0" text="Quantidade" />
+                  <TableColumn id="CollumValor" prefWidth="75.0" text="Valor" />
+                  <TableColumn id="CollumForn" prefWidth="75.0" text="Fornecedor" />
+               </columns>
+            </TableView>
+            <TextField id="pesqTable" layoutX="152.0" layoutY="14.0" prefHeight="25.0" prefWidth="382.0" />
+            <Text fill="#334b48" layoutX="84.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pesquisar:">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button id="btnCadastrarProduct" layoutX="240.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" styleClass="BtnCadastrar" text="Cadastrar" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnEditarProduct" layoutX="381.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Editar" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnExcluirProduc" layoutX="491.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Excluir" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnLimpCampProduc" layoutX="614.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #41A2FB; -fx-border-color: #34404A; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Limpar Campos" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
