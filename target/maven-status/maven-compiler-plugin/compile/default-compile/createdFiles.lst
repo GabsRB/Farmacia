@@ -1,0 +1,14 @@
+com\mycompany\ClienteDAO.class
+com\mycompany\ConsultaExamesController.class
+com\mycompany\MenuPrincipalController.class
+com\mycompany\DAO.class
+com\mycompany\Principal.class
+com\mycompany\Cliente.class
+com\mycompany\FornecedorDAO.class
+com\mycompany\TelaExamesController.class
+com\mycompany\TelaClientesController.class
+com\mycompany\Banco.class
+com\mycompany\TelaFornecedoresController.class
+com\mycompany\TelaProdutosController.class
+com\mycompany\ConsultarProdutosController.class
+com\mycompany\ListaComprasController.class
